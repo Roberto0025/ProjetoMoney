@@ -1,0 +1,158 @@
+object FormLancResumo: TFormLancResumo
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 597
+  ClientWidth = 362
+  Fill.Kind = Solid
+  Position = MainFormCenter
+  StyleBook = FormPrincipal.StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 362.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Contents
+      StyledSettings = [Family, FontColor]
+      Size.Width = 362.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Lan'#231'amentos'
+      TabOrder = 3
+    end
+    object ImgVoltar: TImage
+      MultiResBitmap = <
+        item
+          Width = 100
+          Height = 100
+          PNG = {
+            89504E470D0A1A0A0000000D494844520000006400000064080600000070E295
+            54000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            022649444154785EEDDC398B14511440E1564103131311C105C40D3710111115
+            5C12710FFD956E9982A189982962E092B8E1BEA3A2E8B95A03C3E381DD8CAFEA
+            D27D3E3814930DEF4E77F554BDEA912449922449922449922449922449D36C49
+            77CC6A6977FCD51D35900D748D7E76DDA083A4011CA0F714AF8AF97DA343A41E
+            EDA70F540E63AE9BA49EECA377541BC45CF1F6B59CD4D85E7A4BB521CC2F06B2
+            8CD4D01E7A43B50194C5895E0DEDA6D7545BFCB238B76C2535B28B5E526DF1CB
+            3ED3615223F197FE9C6A8B5F16C338426A640B3DA3DAE297C5308E921A89613C
+            A5DAE2977DA163A44636D313AA2D7ED9573A416A64138D3B8CB8447292D4C846
+            7A4CB5C52F8B619C2235B29E1E516DF1CB6218A7498DACA387545BFCB218C619
+            52236BE901D516BF2C867196D4480CE33ED516BFEC3B9D2335B286C61DC60F3A
+            4F6A6415DDA5DAE297398CC656D33DAA2DFEB417B79BAFD0764A619257C634F7
+            9176D2A056D26DAAFD82B3D8551ACC0ABA45B55F6C568B4F8D0BDAEBB6B83B2A
+            89850C2476881CA73B7F7E52B84EB11163509ED4FF1627F51D94C22C7FEC8D77
+            8ACBB48D52F11FC384BC749290171713F2F27B42DEA04AC85BB809B9C92121B7
+            0125E446B984DC4A9A909BAD13F27184847C6027A1491F694BB391609A4DF2D0
+            E725520FC67DA5BC22F5649C2F0EF8448B483DF9D7576BC49D39F52CBE7CA636
+            94D82198EE36E9AC884F531728CE192FE822390C499224499224499224499224
+            4992A4FF6834FA0DF6DB2A0529EBB0430000000049454E44AE426082}
+        end>
+      Align = MostLeft
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = ImgVoltarClick
+    end
+  end
+  object Layout2: TLayout
+    Align = Top
+    Position.Y = 50.000000000000000000
+    Size.Width = 362.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Rectangle1: TRectangle
+      Align = Center
+      Fill.Color = claCornflowerblue
+      Margins.Top = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 201.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      XRadius = 19.000000000000000000
+      YRadius = 19.000000000000000000
+      object lbl_mes: TLabel
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Size.Width = 201.000000000000000000
+        Size.Height = 38.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Text = 'SETEMBRO'
+        TabOrder = 0
+      end
+    end
+  end
+  object lv_resumo: TListView
+    ItemAppearanceClassName = 'TDynamicAppearance'
+    ItemEditAppearanceClassName = 'TDynamicAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    ItemSpaces.Left = 0.000000000000000000
+    ItemSpaces.Right = 0.000000000000000000
+    Align = Client
+    Size.Width = 362.000000000000000000
+    Size.Height = 497.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    ItemAppearance.ItemHeight = 60
+    ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'imgIcone'
+        AppearanceClassName = 'TImageObjectAppearance'
+        Appearance.Width = 47.000000000000000000
+        Appearance.Height = 44.000000000000000000
+        Appearance.PlaceOffset.X = 8.000000000000000000
+        Appearance.PlaceOffset.Y = 8.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'txtCategoria'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.Size = 14.000000000000000000
+        Appearance.TextAlign = Leading
+        Appearance.TextColor = claSteelblue
+        Appearance.Width = 203.000000000000000000
+        Appearance.Height = 20.000000000000000000
+        Appearance.PlaceOffset.X = 62.000000000000000000
+        Appearance.PlaceOffset.Y = 32.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'txtValor'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.Size = 14.000000000000000000
+        Appearance.TextAlign = Trailing
+        Appearance.TextColor = claSlateblue
+        Appearance.Width = 86.000000000000000000
+        Appearance.Height = 20.000000000000000000
+        Appearance.Align = Trailing
+        Appearance.PlaceOffset.X = -5.000000000000000000
+        Appearance.PlaceOffset.Y = 32.000000000000000000
+      end>
+    ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'Text1'
+        AppearanceClassName = 'TTextObjectAppearance'
+      end>
+    ItemAppearanceObjects.FooterObjects.Text.Width = 324.000000000000000000
+    ItemAppearanceObjects.FooterObjects.Text.Height = 48.000000000000000000
+    ItemAppearanceObjects.FooterObjects.Text.PlaceOffset.X = -2.000000000000000000
+  end
+end
